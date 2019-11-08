@@ -12,9 +12,6 @@ router.get("/api/workouts", (req, res) => {
     })
 });
 
-// get "/api/workouts/range"
-
-
 // post "/api/workouts"
 router.post("/api/workouts", (req, res) => {
     console.log("POST")

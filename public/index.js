@@ -21,7 +21,6 @@ init();
 async function init() {
   if (location.search.split("=")[1] === undefined) {
     const workout = await API.createWorkout();
-    console.log(workout._id)
     location.search = "?id=" + workout._id;
   }
 }
