@@ -1,6 +1,6 @@
 async function init() {
   const lastWorkout = await API.getLastWorkout();
-  console.log(lastWorkout);
+  console.log("last:", lastWorkout);
 
   document
     .querySelector("a[href='/exercise?']")
@@ -53,7 +53,7 @@ function renderWorkoutSummary(summary) {
     totalReps: "Total Reps Performed",
     totalDistance: "Total Distance Covered"
   };
-
+console.log("lasworkout:", workoutKeyMap)
   Object.keys(summary).forEach(key => {
     const p = document.createElement("p");
     const strong = document.createElement("strong");
